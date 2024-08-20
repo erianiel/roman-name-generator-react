@@ -7,15 +7,22 @@
   --color-darker-tertiary: #1f5ea8;
 
   --color-bg-1: #ede9de;
-  --color-bg-2: #d5972b;
+  --color-bg-2: #ebcf9f;
+  --color-bg-2-darker: #d5972b;
   --color-bg-3: #eb967a;
 
   --color-dark: #692928;
 
   --gradient-bg: linear-gradient(
     to right bottom,
-    var(--color-bg-2),
-    var(--color-bg-1)
+    var(--color-bg-1),
+    var(--color-bg-2)
+  );
+
+  --gradient-title: linear-gradient(
+    to top left,
+    var(--color-bg-2-darker),
+    var(--color-primary)
   );
 }
 
