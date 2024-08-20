@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background-color: #ede9de9e;
+  padding: 1.6rem;
+  width: 50rem;
+  border: 1px solid rgba(235, 150, 122, 0.365);
+  border-left: 1.8rem solid rgba(235, 150, 122, 0.365);
+  border-radius: 6px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  padding-right: 1rem;
+}
+
+.card h2 {
+  color: var(--color-secondary);
+  font-size: 2rem;
+}
+
+.card p {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
