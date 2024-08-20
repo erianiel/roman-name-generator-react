@@ -21,6 +21,14 @@
 }
 
 .submit:hover {
-  background: linear-gradient(to right bottom, #eb967ac6, #c66152);
+  background: linear-gradient(to right bottom, #eb967a, #b95445);
   box-shadow: 0.1rem 0.1rem 0.1rem rgba(24, 24, 26, 0.333);
+}
+
+.action {
+  background: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
 }
