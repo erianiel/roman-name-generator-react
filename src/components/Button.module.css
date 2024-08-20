@@ -1,0 +1,26 @@
+.btn {
+  color: inherit;
+  padding: 0.8rem 1.6rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit {
+  background: linear-gradient(
+    to right bottom,
+    var(--color-bg-3),
+    var(--color-secondary)
+  );
+  color: var(--color-bg-1);
+  font-weight: 600;
+  box-shadow: 0.1rem 0.2rem 0.8rem rgba(24, 24, 26, 0.333);
+  transition: all 0.3s;
+}
+
+.submit:hover {
+  background: linear-gradient(to right bottom, #eb967ac6, #c66152);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(24, 24, 26, 0.333);
+}
