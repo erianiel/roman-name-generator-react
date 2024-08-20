@@ -1,4 +1,5 @@
 import { IoCopyOutline, IoTrashOutline } from "react-icons/io5";
+import Button from "./Button.jsx";
 import styles from "./Card.module.css";
 
 function Card() {
@@ -11,8 +12,12 @@ function Card() {
           <p>citizen</p>
         </div>
         <div className={styles.actions}>
-          <IoCopyOutline color="#777" size="1.8rem" />
-          <IoTrashOutline color="#a1321e" size="1.8rem" />
+          <Button type="action">
+            <IoCopyOutline color="#777" size="1.8rem" />
+          </Button>
+          <Button type="action">
+            <IoTrashOutline color="#a1321e" size="1.8rem" />
+          </Button>
         </div>
       </div>
     </div>
