@@ -1,12 +1,14 @@
+import { useNames } from "../contexts/NamesContext.jsx";
 import styles from "./NameContent.module.css";
 
 function NameInfo() {
+  const { fullName, gender, status } = useNames();
   return (
     <div className={styles.container}>
-      <h3>Marcus Tullius Cicero</h3>
+      <h3>{fullName}</h3>
       <div className={styles.contentBox}>
         <div>
-          <h2>Status</h2>
+          <h2>{status}</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -15,7 +17,7 @@ function NameInfo() {
           </p>
         </div>
         <div>
-          <h2>Gender</h2>
+          <h2>{gender}</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
