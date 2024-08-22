@@ -33,3 +33,15 @@
   font-size: 1.4rem;
   line-height: 1.6;
 }
+
+.contentLink:link,
+.contentLink:visited {
+  text-decoration: none;
+  color: var(--color-secondary);
+  transform: all 0.3s;
+}
+
+.contentLink:hover,
+.contentLink:active {
+  border-bottom: 0.8px solid var(--color-secondary);
+}
