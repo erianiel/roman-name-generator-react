@@ -2,14 +2,14 @@ import { IoCopyOutline, IoTrashOutline } from "react-icons/io5";
 import Button from "./Button.jsx";
 import styles from "./Card.module.css";
 
-function Card() {
+function Card({ person }) {
   return (
     <div className={styles.card}>
-      <h2>Marcus Tullius Cicero</h2>
+      <h2>{person.fullName}</h2>
       <div className={styles.content}>
         <div className={styles.info}>
-          <p>male</p>
-          <p>citizen</p>
+          <p>{person.gender}</p>
+          <p>{person.status}</p>
         </div>
         <div className={styles.actions}>
           <Button type="action">

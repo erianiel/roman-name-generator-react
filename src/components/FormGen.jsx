@@ -1,11 +1,13 @@
 import { IoPersonOutline, IoReceiptOutline } from "react-icons/io5";
 import { generateFullName } from "roman-name-generator";
+import { useLocalStorage } from "../hooks/useLocalStorage.js";
 import { useNames } from "../contexts/NamesContext";
 import Button from "./Button.jsx";
 import styles from "./FormGen.module.css";
 
 function FormGen() {
   const { dispatch } = useNames();
+  const [people, setPeople] = useLocalStorage([], "people");
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -14,6 +16,7 @@ function FormGen() {
     const fullName = generateFullName(gender, status);
 
     dispatch({ type: "fullName/created", payload: fullName });
+    setPeople([fullName, ...people]);
   }
 
   return (
