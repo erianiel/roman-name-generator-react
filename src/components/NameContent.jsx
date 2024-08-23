@@ -20,6 +20,7 @@ function NameInfo() {
               and at the same time the greatness of Rome. More info,{" "}
               <a
                 className={styles.contentLink}
+                target="_blank"
                 href="https://en.wikipedia.org/wiki/Roman_citizenship"
               >
                 here
@@ -38,6 +39,7 @@ function NameInfo() {
               wealth. More info,{" "}
               <a
                 className={styles.contentLink}
+                target="_blank"
                 href="https://en.wikipedia.org/wiki/Ancient_Roman_freedmen"
               >
                 here
@@ -54,6 +56,7 @@ function NameInfo() {
               property. For this reason, they had only one name. More info,{" "}
               <a
                 className={styles.contentLink}
+                target="_blank"
                 href="https://en.wikipedia.org/wiki/Slavery_in_ancient_Rome"
               >
                 here
@@ -73,6 +76,7 @@ function NameInfo() {
               administrate her own wealth and keep her names. More info,{" "}
               <a
                 className={styles.contentLink}
+                target="_blank"
                 href="https://en.wikipedia.org/wiki/Women_in_ancient_Rome"
               >
                 here
@@ -90,6 +94,7 @@ function NameInfo() {
               info,{" "}
               <a
                 className={styles.contentLink}
+                target="_blank"
                 href="https://en.wikipedia.org/wiki/Social_class_in_ancient_Rome"
               >
                 here
