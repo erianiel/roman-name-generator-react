@@ -8,7 +8,7 @@
 }
 
 .contentBox {
-  background-color: #ede9de9e;
+  background-color: var(--color-bg-1-lighter);
   padding: 2.8rem;
   width: 60rem;
   display: flex;
