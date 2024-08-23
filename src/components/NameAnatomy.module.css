@@ -1,0 +1,48 @@
+.anatomy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 6rem;
+  max-width: 70rem;
+}
+
+.anatomy h2 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.anatomy h3 {
+  cursor: pointer;
+  color: var(--color-secondary);
+  font-size: 5.2rem;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  background-color: var(--color-bg-1-lighter);
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+.contentBox h4 {
+  color: var(--color-darker-tertiary);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.textBox p {
+  font-size: 1.6rem;
+}
+
+.activeName {
+  color: var(--color-darker-tertiary);
+}
