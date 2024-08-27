@@ -5,8 +5,10 @@
   background-color: var(--color-bg-1-lighter);
   padding: 1.6rem;
   width: 50rem;
-  border: 1px solid rgba(235, 150, 122, 0.365);
-  border-left: 1.8rem solid rgba(235, 150, 122, 0.365);
+  /* border: 1px solid rgba(235, 150, 122, 0.365);
+  border-left: 1.8rem solid rgba(235, 150, 122, 0.365); */
+  border: 1px solid var(--color-bg-3-lighter);
+  border-left: 1.8rem solid var(--color-bg-3-lighter);
   border-radius: 6px;
 }
 

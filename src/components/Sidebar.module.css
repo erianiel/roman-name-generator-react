@@ -1,6 +1,21 @@
 .container {
   padding: 4rem 0;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+}
+
+.namesBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.scroll {
+  padding-right: 2rem;
+  max-width: 60rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--color-bg-3-lighter) var(--color-bg-1-lighter);
 }

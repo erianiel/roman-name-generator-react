@@ -1,4 +1,5 @@
 import { createContext, useContext, useReducer } from "react";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 const NamesContext = createContext();
 
@@ -26,8 +27,19 @@ function NamesProvider({ children }) {
     initialState
   );
 
+  const [people, setPeople] = useLocalStorage([], "people");
+
   return (
-    <NamesContext.Provider value={{ fullName, gender, status, dispatch }}>
+    <NamesContext.Provider
+      value={{
+        fullName,
+        gender,
+        status,
+        people,
+        setPeople,
+        dispatch,
+      }}
+    >
       {children}
     </NamesContext.Provider>
   );

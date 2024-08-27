@@ -1,22 +1,26 @@
 import { IoPersonOutline, IoReceiptOutline } from "react-icons/io5";
 import { generateFullName } from "roman-name-generator";
-import { useLocalStorage } from "../hooks/useLocalStorage.js";
 import { useNames } from "../contexts/NamesContext";
 import Button from "./Button.jsx";
 import styles from "./FormGen.module.css";
 
 function FormGen() {
-  const { dispatch } = useNames();
-  const [people, setPeople] = useLocalStorage([], "people");
+  const { dispatch, people, setPeople } = useNames();
 
   function handleSubmit(e) {
     e.preventDefault();
     const gender = e.target.gender.value;
     const status = e.target.status.value;
-    const fullName = generateFullName(gender, status);
+    const person = generateFullName(gender, status);
+    let updatedPeople = people;
 
-    dispatch({ type: "fullName/created", payload: fullName });
-    setPeople([fullName, ...people]);
+    dispatch({ type: "fullName/created", payload: person });
+
+    if (people.length > 20) {
+      updatedPeople = people.slice(0, 20);
+    }
+
+    setPeople([person, ...updatedPeople]);
   }
 
   return (

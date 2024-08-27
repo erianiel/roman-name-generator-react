@@ -7,15 +7,17 @@
   --color-darker-tertiary: #1f5ea8;
 
   --color-bg-1: #ede9de;
+  --color-bg-1-lighter: #fafafa88;
   --color-bg-2: #ebcf9f;
   --color-bg-2-darker: #d5972b;
   --color-bg-3: #eb967a;
+  --color-bg-3-lighter: #eb967aa3;
 
   --color-dark: #692928;
 
   --gradient-bg: linear-gradient(
     to right bottom,
-    var(--color-bg-1),
+    var(--color-bg-1-lighter),
     var(--color-bg-2)
   );
 
