@@ -10,6 +10,7 @@ function Card({ person }) {
 
   async function handleCopy() {
     setIsCopied(await copy(person.fullName));
+    setTimeout(() => setIsCopied(false), 1500);
   }
 
   return (
@@ -21,8 +22,9 @@ function Card({ person }) {
           <p>{person.status}</p>
         </div>
         <div className={styles.actions}>
+          {isCopied && <span className={styles.copied}>Copied!</span>}
           <Button onClick={() => handleCopy()} type="action">
-            <IoCopyOutline color="#777" size="1.8rem" />
+            <IoCopyOutline color="#595959" size="1.8rem" />
           </Button>
           <Button type="action">
             <IoTrashOutline color="#a1321e" size="1.8rem" />
