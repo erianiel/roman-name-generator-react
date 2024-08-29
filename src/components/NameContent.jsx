@@ -5,10 +5,12 @@ function NameInfo() {
   const { fullName, gender, status } = useNames();
   return (
     <div className={styles.container}>
-      <h3>{fullName}</h3>
+      <h3 className={fullName.length < 25 ? styles.nameSize : styles.resize}>
+        {fullName}
+      </h3>
       <div className={styles.contentBox}>
         <div>
-          <h2>{status}</h2>
+          <h4>{status}</h4>
           {status === "citizen" && (
             <p>
               In ancient Rome, citizenship made the difference between the free
@@ -16,8 +18,7 @@ function NameInfo() {
               were protected by laws and they had the right of governance and
               property. But most importantly, citizens had the right to glory.
               They had the goal of being recognized by the entire population for
-              their virtues and merits, thus increasing the fame of their names
-              and at the same time the greatness of Rome. More info,{" "}
+              their virtues and merits. More info,{" "}
               <a
                 className={styles.contentLink}
                 target="_blank"
@@ -66,7 +67,7 @@ function NameInfo() {
           )}
         </div>
         <div>
-          <h2>{gender}</h2>
+          <h4>{gender}</h4>
           {gender === "female" && (
             <p>
               The role of women was limited to the domestic and private sphere.

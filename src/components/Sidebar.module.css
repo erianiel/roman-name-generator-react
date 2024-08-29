@@ -1,21 +1,46 @@
 .container {
-  padding: 4rem 0;
-  height: 80vh;
+  padding: 4rem;
+  height: 85vh;
+  min-width: 62rem;
+  max-width: 65rem;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  flex: 1;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .namesBox {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  padding-right: 2rem;
 }
 
 .scroll {
-  padding-right: 2rem;
-  max-width: 60rem;
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scrollbar-color: var(--color-bg-3-lighter) var(--color-bg-1-lighter);
+}
+
+/* Media Queries */
+@media (max-width: 92.75em) {
+  .container {
+    width: 55rem;
+  }
+}
+
+@media (max-width: 84em) {
+  .container {
+    width: 50rem;
+    min-width: 52rem;
+  }
+
+  .namesBox {
+    padding-right: 1.4rem;
+  }
 }

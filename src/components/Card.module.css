@@ -45,3 +45,10 @@
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+@media (max-width: 84em) {
+  .card {
+    width: 40rem;
+    padding: 1.2rem;
+  }
+}

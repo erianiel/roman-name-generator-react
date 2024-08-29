@@ -1,7 +1,8 @@
 .container {
   padding: 4rem;
-  justify-self: center;
-  width: 80rem;
+  max-width: 90rem;
+  height: 100vh;
+  flex: 2;
 }
 
 .title {
@@ -28,3 +29,9 @@
   transform: scale(1.07, 1.05) skewX(-15deg);
   background-image: var(--gradient-title);
 }
+
+/* @media (max-width: 84em) {
+  .container {
+    width: 60rem;
+  }
+} */
