@@ -59,6 +59,11 @@ function NameAnatomy() {
                 designates all the members of the same gens: men and women, free
                 born or freed.
               </p>
+
+              <p>
+                The nomen was transmitted from the father to both male and
+                female children, who, once married, kept it.
+              </p>
             </div>
           </div>
         )}
@@ -67,10 +72,15 @@ function NameAnatomy() {
             <h4>Cognomen</h4>
             <div className={styles.textBox}>
               <p>
-                It was an unofficial nickname given to distinguish people more
-                precisely. It could be created on the basis of physical or
-                psychological characteristics. It could derive from the names of
-                cities or folks, trades, or even plants.
+                Originally, it was an unofficial nickname given to distinguish
+                people more precisely. It could be created on the basis of
+                physical or psychological characteristics. It could derive from
+                the names of cities or folks, trades, or even plants.
+              </p>
+              <p>
+                Sometimes it was related to birth order or it evoked historical
+                and mythological characters (in the cases of freedmen, for
+                instance).{" "}
               </p>
             </div>
           </div>

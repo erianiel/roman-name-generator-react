@@ -28,7 +28,7 @@
 }
 
 .contentBox h4 {
-  color: var(--color-darker-tertiary);
+  color: var(--color-tertiary);
   text-transform: uppercase;
   font-size: 2rem;
 }

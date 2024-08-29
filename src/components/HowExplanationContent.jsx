@@ -43,13 +43,14 @@ function HowExplanationContent() {
       <p>
         In particular, for the names of slaves, this generator has been
         implemented using the catalogue of the Museum of Roman Epigraphy of the
-        Terme di Caracalla, in Rome.
+        Baths of Diocletian, in Rome.
       </p>
       <p>
         Finally, when choosing a name for your character, remember that for the
         Romans, it was everything. The{" "}
         <span className={styles.italic}>tria nomina</span> were the quintessence
-        of citizenship, embodying their values and the honour of their lineage.
+        of citizenship, embodying their values, the honour of their lineage and,
+        at the same time, the greatness of Rome.
       </p>
     </div>
   );
