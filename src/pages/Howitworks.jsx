@@ -5,13 +5,13 @@ import styles from "./Howitworks.module.css";
 
 export default function Howitworks() {
   return (
-    <section className={styles.container}>
+    <main className={styles.container}>
       <PageNav />
 
-      <div className={styles.contentBox}>
+      <section className={styles.contentBox}>
         <NameAnatomy />
         <HowExplanationContent />
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }
