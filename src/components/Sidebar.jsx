@@ -16,7 +16,7 @@ function Sidebar() {
   const [showNames, setShowNames] = useState(false);
 
   return (
-    <div className={`${styles.container} ${!people.length && styles.hidden}`}>
+    <div className={`${styles.container} ${!people.length && "hidden"}`}>
       {isMobile && (
         <Button onClick={() => setShowNames(!showNames)} variant="tertiary">
           Show generated names
@@ -24,9 +24,7 @@ function Sidebar() {
         </Button>
       )}
 
-      <div
-        className={`${styles.gap} ${isMobile && !showNames && styles.hidden}`}
-      >
+      <div className={`${styles.gap} ${isMobile && !showNames && "hidden"}`}>
         <Button onClick={() => setPeople([])} variant="secondary">
           <IoTrashOutline size="2.4rem" />
           Delete All

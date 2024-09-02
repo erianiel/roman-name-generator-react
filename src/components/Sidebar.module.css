@@ -8,10 +8,6 @@
   flex: 1;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
 .namesBox {
   display: flex;
   flex-direction: column;
@@ -48,6 +44,7 @@
 
   .namesBox {
     padding-right: 1.4rem;
+    height: 85%;
   }
 }
 
