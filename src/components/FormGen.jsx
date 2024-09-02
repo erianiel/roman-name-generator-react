@@ -16,7 +16,7 @@ function FormGen() {
 
     dispatch({ type: "fullName/created", payload: person });
 
-    if (people.length > 20) {
+    if (people.length === 20) {
       updatedPeople = people.slice(0, 20);
     }
 
@@ -45,7 +45,9 @@ function FormGen() {
         </select>
       </div>
 
-      <Button type="submit">Generate!</Button>
+      <Button variant="primary" type="submit">
+        Generate!
+      </Button>
     </form>
   );
 }

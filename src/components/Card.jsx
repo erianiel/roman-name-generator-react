@@ -23,10 +23,10 @@ function Card({ person }) {
         </div>
         <div className={styles.actions}>
           {isCopied && <span className={styles.copied}>Copied!</span>}
-          <Button onClick={() => handleCopy()} type="action">
+          <Button onClick={() => handleCopy()} variant="secondary">
             <IoCopyOutline color="#595959" size="1.8rem" />
           </Button>
-          <Button type="action">
+          <Button variant="secondary">
             <IoTrashOutline color="#a1321e" size="1.8rem" />
           </Button>
         </div>
