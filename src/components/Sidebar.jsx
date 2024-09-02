@@ -13,35 +13,35 @@ import { useMediaQuery } from "@custom-react-hooks/use-media-query";
 function Sidebar() {
   const { people, setPeople } = useNames();
   const isMobile = useMediaQuery("(max-width: 67em");
-  const [isClicked, setIsClicked] = useState(false);
+  const [showNames, setShowNames] = useState(false);
 
   return (
     <div className={`${styles.container} ${!people.length && styles.hidden}`}>
       {isMobile && (
-        <Button onClick={() => setIsClicked(!isClicked)} type="action">
-          Show generated names{" "}
-          {!isClicked ? <IoChevronDownOutline /> : <IoChevronUpOutline />}
+        <Button onClick={() => setShowNames(!showNames)} variant="tertiary">
+          Show generated names
+          {!showNames ? <IoChevronDownOutline /> : <IoChevronUpOutline />}
         </Button>
       )}
-      {!people.length ||
-        (isClicked && (
-          <>
-            <Button onClick={() => setPeople([])} type="action">
-              <IoTrashOutline size="2.4rem" />
-              Delete All
-            </Button>
 
-            <div
-              className={`${styles.namesBox} ${
-                people.length > 5 && styles.scroll
-              }`}
-            >
-              {people.map((person, i) => (
-                <Card key={i} person={person} />
-              ))}
-            </div>
-          </>
-        ))}
+      <div
+        className={`${styles.gap} ${isMobile && !showNames && styles.hidden}`}
+      >
+        <Button onClick={() => setPeople([])} variant="secondary">
+          <IoTrashOutline size="2.4rem" />
+          Delete All
+        </Button>
+
+        <div
+          className={`${styles.namesBox} ${
+            !isMobile && people.length > 5 && styles.scroll
+          }`}
+        >
+          {people.map((person, i) => (
+            <Card key={i} person={person} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
