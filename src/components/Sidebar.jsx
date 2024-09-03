@@ -15,6 +15,10 @@ function Sidebar() {
   const isMobile = useMediaQuery("(max-width: 67em");
   const [showNames, setShowNames] = useState(false);
 
+  function deletePerson(id) {
+    setPeople(people.filter((p) => p.id !== id));
+  }
+
   return (
     <div className={`${styles.container} ${!people.length && "hidden"}`}>
       {isMobile && (
@@ -36,7 +40,7 @@ function Sidebar() {
           }`}
         >
           {people.map((person) => (
-            <Card key={person.id} person={person} />
+            <Card key={person.id} person={person} handleDelete={deletePerson} />
           ))}
         </div>
       </div>

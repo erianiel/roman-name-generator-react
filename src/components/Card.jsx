@@ -4,7 +4,7 @@ import styles from "./Card.module.css";
 import { useCopyToClipboard } from "../hooks/useCopyToClipboard.js";
 import { useState } from "react";
 
-function Card({ person }) {
+function Card({ person, handleDelete }) {
   const [copiedText, copy] = useCopyToClipboard();
   const [isCopied, setIsCopied] = useState(false);
 
@@ -26,7 +26,7 @@ function Card({ person }) {
           <Button onClick={() => handleCopy()} variant="secondary">
             <IoCopyOutline color="#595959" size="1.8rem" />
           </Button>
-          <Button variant="secondary">
+          <Button onClick={() => handleDelete(person.id)} variant="secondary">
             <IoTrashOutline color="#a1321e" size="1.8rem" />
           </Button>
         </div>
