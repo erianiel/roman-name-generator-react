@@ -4,6 +4,7 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 const NamesContext = createContext();
 
 const initialState = {
+  id: "",
   fullName: "",
   gender: "",
   status: "",
@@ -14,6 +15,7 @@ function reducer(state, action) {
     case "fullName/created":
       return {
         ...state,
+        id: action.payload.id,
         fullName: action.payload.fullName,
         gender: action.payload.gender,
         status: action.payload.status,

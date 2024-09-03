@@ -11,13 +11,17 @@ function FormGen() {
     e.preventDefault();
     const gender = e.target.gender.value;
     const status = e.target.status.value;
-    const person = generateFullName(gender, status);
+    const person = {
+      id: crypto.randomUUID(),
+      ...generateFullName(gender, status),
+    };
+
     let updatedPeople = people;
 
     dispatch({ type: "fullName/created", payload: person });
 
-    if (people.length === 20) {
-      updatedPeople = people.slice(0, 20);
+    if (people.length > 19) {
+      updatedPeople = people.slice(0, 19);
     }
 
     setPeople([person, ...updatedPeople]);

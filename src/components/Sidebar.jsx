@@ -35,8 +35,8 @@ function Sidebar() {
             !isMobile && people.length > 5 && styles.scroll
           }`}
         >
-          {people.map((person, i) => (
-            <Card key={i} person={person} />
+          {people.map((person) => (
+            <Card key={person.id} person={person} />
           ))}
         </div>
       </div>
