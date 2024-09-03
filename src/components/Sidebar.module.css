@@ -13,7 +13,7 @@
   flex-direction: column;
   gap: 1.6rem;
   padding-right: 2rem;
-  height: 70vh;
+  height: 80vh;
 }
 
 .scroll {
@@ -44,12 +44,18 @@
 
   .namesBox {
     padding-right: 1.4rem;
-    height: 85%;
+    height: 85vh;
   }
 }
 
 @media (max-width: 67rem) {
   .container {
     align-items: center;
+  }
+}
+
+@media (max-width: 23.44em) {
+  .namesBox {
+    padding-right: 0;
   }
 }

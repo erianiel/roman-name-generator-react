@@ -1,13 +1,15 @@
 .container {
-  /* width: 80rem; */
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .container h3 {
   color: var(--color-secondary);
   line-height: 1.28;
+  height: 8rem;
+  display: flex;
+  align-items: center;
 }
 
 .nameSize {
@@ -69,4 +71,47 @@
 }
 
 @media (max-width: 67em) {
+  .contentBox {
+    padding: 3.2rem;
+    width: 55rem;
+  }
+
+  .contentBox p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 35rem) {
+  .contentBox {
+    width: 50rem;
+  }
+
+  .contentBox p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 28.43em) {
+  .nameSize {
+    font-size: 3.2rem;
+  }
+
+  .resize {
+    font-size: 3rem;
+  }
+
+  .contentBox {
+    width: 45rem;
+  }
+}
+
+@media (max-width: 23.44em) {
+  .container {
+    gap: 3.2rem;
+    align-items: center;
+  }
+
+  .contentBox {
+    width: 40rem;
+  }
 }

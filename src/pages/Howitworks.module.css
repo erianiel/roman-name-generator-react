@@ -25,6 +25,10 @@
 }
 
 @media (max-width: 67em) {
+  .container {
+    padding: 1.2rem 0;
+  }
+
   .contentBox {
     flex-direction: column-reverse;
     align-items: center;

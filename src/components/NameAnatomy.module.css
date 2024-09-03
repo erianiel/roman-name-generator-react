@@ -51,11 +51,15 @@
 
 @media (max-width: 92em) {
   .anatomy {
-    padding: 4rem 0;
+    padding: 4rem 1.4rem;
+  }
+
+  .anatomy h3 {
+    font-size: 4.8rem;
   }
 }
 
-@media (max-width: 80em) {
+@media (max-width: 82em) {
   .contentBox {
     max-width: 50rem;
   }
@@ -73,6 +77,55 @@
   }
 
   .textBox p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 67em) {
+  .anatomy {
+    height: 85rem;
+    gap: 2.8rem;
+  }
+
+  .anatomy h2 {
+    font-size: 2.6rem;
+  }
+
+  .contentBox {
+    padding: 2.8rem 0rem;
+  }
+
+  .contentBox h4 {
+    font-size: 2.8rem;
+  }
+
+  .textBox p {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 26em) {
+  .anatomy {
+    padding: 4rem;
+  }
+
+  .anatomy h3 {
+    font-size: 4rem;
+  }
+
+  .contentBox h4 {
+    font-size: 2.4rem;
+  }
+
+  .textBox p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 23.44em) {
+  .anatomy h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

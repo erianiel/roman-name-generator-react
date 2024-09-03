@@ -90,3 +90,9 @@
     font-size: 2.8rem;
   }
 }
+
+@media (max-width: 35em) {
+  .nav h1 {
+    font-size: 2.2rem;
+  }
+}
