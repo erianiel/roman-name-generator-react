@@ -1,6 +1,12 @@
 import { useState } from "react";
 import styles from "./NameAnatomy.module.css";
 
+const nameAnatomy = [
+  { part: "praenomen", label: "Marcus" },
+  { part: "nomen", label: "Tullius" },
+  { part: "cognomen", label: "Cicero" },
+];
+
 function NameAnatomy() {
   const [activeNamePart, setActiveNamePart] = useState("praenomen");
 
@@ -9,24 +15,17 @@ function NameAnatomy() {
       <h2>Anatomy of a name</h2>
       <div>
         <h3>
-          <span
-            onMouseEnter={() => setActiveNamePart("praenomen")}
-            className={`${activeNamePart === "praenomen" && styles.activeName}`}
-          >
-            Marcus
-          </span>{" "}
-          <span
-            onMouseEnter={() => setActiveNamePart("nomen")}
-            className={`${activeNamePart === "nomen" && styles.activeName}`}
-          >
-            Tullius
-          </span>{" "}
-          <span
-            onMouseEnter={() => setActiveNamePart("cognomen")}
-            className={`${activeNamePart === "cognomen" && styles.activeName}`}
-          >
-            Cicero
-          </span>
+          {nameAnatomy.map((anatomy, i) => (
+            <span
+              key={i}
+              onMouseEnter={() => setActiveNamePart(anatomy.part)}
+              className={`${
+                activeNamePart === anatomy.part && styles.activeName
+              }`}
+            >
+              {anatomy.label}
+            </span>
+          ))}
         </h3>
         {activeNamePart === "praenomen" && (
           <div className={styles.contentBox}>
