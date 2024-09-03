@@ -26,13 +26,6 @@
     var(--color-bg-2-darker),
     var(--color-primary)
   );
-
-  /* Width queries */
-  --bg-huge: 156.25em; /* 2500px*/
-  --bp-large: 78.15em; /* 1250px */
-  --bp-medium: 61.25em; /* 980px */
-  --bp-small: 37.5em; /* 600px */
-  --bp-smallest: 31.25em; /* 500px */
 }
 
 * {
@@ -44,6 +37,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -51,6 +45,7 @@ body {
   color: var(--color-dark);
   font-weight: 400;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .hidden {
