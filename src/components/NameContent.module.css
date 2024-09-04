@@ -92,6 +92,10 @@
 }
 
 @media (max-width: 28.43em) {
+  .container {
+    align-items: center;
+  }
+
   .nameSize {
     font-size: 3.2rem;
   }
@@ -108,7 +112,6 @@
 @media (max-width: 23.44em) {
   .container {
     gap: 3.2rem;
-    align-items: center;
   }
 
   .contentBox {

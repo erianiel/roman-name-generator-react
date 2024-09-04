@@ -59,6 +59,7 @@
 
   .title {
     font-size: 4rem;
+    text-align: center;
   }
 }
 
@@ -69,6 +70,5 @@
 
   .title {
     font-size: 3.6rem;
-    text-align: center;
   }
 }
