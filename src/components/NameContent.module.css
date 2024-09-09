@@ -71,6 +71,10 @@
 }
 
 @media (max-width: 67em) {
+  .container {
+    align-items: center;
+  }
+
   .contentBox {
     padding: 3.2rem;
     width: 55rem;
@@ -92,10 +96,6 @@
 }
 
 @media (max-width: 28.43em) {
-  .container {
-    align-items: center;
-  }
-
   .nameSize {
     font-size: 3.2rem;
   }
