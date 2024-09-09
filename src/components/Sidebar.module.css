@@ -29,6 +29,10 @@
   gap: 1.8rem;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Media Queries */
 @media (max-width: 92.75em) {
   .container {

@@ -28,7 +28,9 @@ function Sidebar() {
         </Button>
       )}
 
-      <div className={`${styles.gap} ${isMobile && !showNames && "hidden"}`}>
+      <div
+        className={`${styles.gap} ${isMobile && !showNames && styles.hidden}`}
+      >
         <Button onClick={() => setPeople([])} variant="secondary">
           <IoTrashOutline size="2.4rem" />
           Delete All
