@@ -54,7 +54,14 @@
 
 @media (max-width: 67rem) {
   .container {
+    min-width: 0;
+    padding: 0;
+    width: 26rem;
     align-items: center;
+  }
+
+  .namesBox {
+    padding-right: 0;
   }
 }
 

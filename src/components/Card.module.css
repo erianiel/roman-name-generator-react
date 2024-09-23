@@ -48,7 +48,19 @@
 
 @media (max-width: 84em) {
   .card {
-    width: 40rem;
+    max-width: 40rem;
     padding: 1.2rem;
+  }
+}
+
+@media (max-width: 67em) {
+  .card {
+    max-width: 50rem;
+  }
+}
+
+@media (max-width: 23em) {
+  .card {
+    max-width: 35rem;
   }
 }

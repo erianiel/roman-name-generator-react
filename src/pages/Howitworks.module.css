@@ -1,8 +1,4 @@
-.container {
-  padding: 1.2rem 4.8rem;
-}
-
-.contentBox {
+.section {
   display: flex;
   justify-content: space-around;
   gap: 4rem;
@@ -11,23 +7,13 @@
 /* Media queries */
 
 @media (min-width: 120em) {
-  .container section {
+  .section {
     justify-content: space-evenly;
   }
 }
 
-@media (max-width: 84.25em) {
-  .container {
-    padding: 1.2rem;
-  }
-}
-
 @media (max-width: 67em) {
-  .container {
-    padding: 1.2rem 0;
-  }
-
-  .contentBox {
+  .section {
     flex-direction: column-reverse;
     align-items: center;
     gap: 6rem;

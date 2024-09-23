@@ -57,6 +57,7 @@
   .nav {
     position: relative;
     padding: 2rem 3.2rem;
+    overflow-x: clip;
   }
 
   .list {

@@ -94,7 +94,8 @@
   }
 
   .contentBox {
-    padding: 2.8rem 0rem;
+    max-width: inherit;
+    padding: 4rem;
   }
 
   .contentBox h4 {
