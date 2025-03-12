@@ -56,7 +56,7 @@
 @media (max-width: 67em) {
   .nav {
     position: relative;
-    padding: 2rem 3.2rem;
+    padding: 1rem;
     overflow-x: clip;
   }
 
