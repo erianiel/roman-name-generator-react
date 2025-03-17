@@ -1,8 +1,19 @@
-# React + Vite
+# Roman name generator web-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![alt homepage](docs/images/homepage.png "Homepage")
 
-Currently, two official plugins are available:
+## Features 📜
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Users can select the status and the gender in order to generate a new realistic name.
+- The generated names are saved in a visible list, displaying the last 20 names for easy reference.
+- Users can copy the chosen name by clicking on the copy-icon.
+- Names can also be removed from the list.
+
+Link: https://roman-names-generator.netlify.app/
+
+## Tech stack 👩‍💻
+
+- [Roman name generator](https://github.com/erianiel/roman-name-generator)
+- React, ReactDOM, ReactRouter
+- CSS modules
+- Vite
