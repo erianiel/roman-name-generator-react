@@ -59,7 +59,7 @@
   }
 }
 
-@media (max-width: 23em) {
+@media (max-width: 25em) {
   .card {
     max-width: 35rem;
   }

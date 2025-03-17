@@ -62,11 +62,6 @@
 
   .namesBox {
     padding-right: 0;
-  }
-}
-
-@media (max-width: 23.44em) {
-  .namesBox {
-    padding-right: 0;
+    height: 100%;
   }
 }

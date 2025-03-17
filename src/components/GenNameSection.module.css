@@ -33,6 +33,7 @@
 /* Media queries */
 @media (max-width: 67em) {
   .container {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,7 +55,7 @@
   }
 }
 
-@media (max-width: 23.44em) {
+@media (max-width: 25em) {
   .title {
     font-size: 3.6rem;
   }

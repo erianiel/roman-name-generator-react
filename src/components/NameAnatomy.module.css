@@ -112,8 +112,13 @@
     padding: 4rem;
   }
 
+  .anatomy h2 {
+    text-align: center;
+  }
+
   .anatomy h3 {
     font-size: 4rem;
+    margin-bottom: 4rem;
   }
 
   .contentBox h4 {

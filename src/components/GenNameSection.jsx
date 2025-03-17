@@ -1,6 +1,6 @@
 import { useNames } from "../contexts/NamesContext.jsx";
 
-import Form from "./FormGen.jsx";
+import FormGen from "./FormGen.jsx";
 import NameContent from "./NameContent.jsx";
 import styles from "./GenNameSection.module.css";
 
@@ -14,7 +14,7 @@ function GenNameSection() {
         Ancient Roman <span className={styles.highlight}>name!</span>
       </h1>
 
-      <Form />
+      <FormGen />
       {fullName && <NameContent />}
     </div>
   );

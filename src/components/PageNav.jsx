@@ -32,10 +32,21 @@ function PageNav() {
         }`}
       >
         <li>
-          <NavLink to="/howitworks">How it works</NavLink>
+          <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
+            Home
+          </NavLink>
         </li>
         <li>
-          <a href="https://github.com/erianiel" target="_blank">
+          <NavLink to="/howitworks" onClick={() => setIsMenuOpen(false)}>
+            How it works
+          </NavLink>
+        </li>
+        <li>
+          <a
+            href="https://github.com/erianiel"
+            onClick={() => setIsMenuOpen(false)}
+            target="_blank"
+          >
             GitHub
           </a>
         </li>
